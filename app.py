@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+
 
 
 import pandas as pd
@@ -107,8 +107,6 @@ results_df = pd.DataFrame(results)
 print(results_df)
 
 
-# In[8]:
-
 
 best_model_info = results_df.loc[results_df['Accuracy'].idxmax()]
 print("\nBest Model based on Accuracy:")
@@ -127,7 +125,6 @@ loaded_preprocessor = joblib.load('preprocessor.pkl')
 print(f"{best_model_name} and preprocessor loaded successfully")
 
 
-# In[10]:
 
 
 # Load the dataset
@@ -497,7 +494,7 @@ print(f'Mean Absolute Error (MAE): {mae}')
 print(f'Predictions:\n{(y_sample, predictions)}')
 
 
-# In[ ]:
+
 
 
 
