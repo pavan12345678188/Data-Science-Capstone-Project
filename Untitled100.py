@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
 
 
 import pandas as pd
@@ -107,7 +106,6 @@ results_df = pd.DataFrame(results)
 print(results_df)
 
 
-# In[8]:
 
 
 best_model_info = results_df.loc[results_df['Accuracy'].idxmax()]
@@ -127,7 +125,7 @@ loaded_preprocessor = joblib.load('preprocessor.pkl')
 print(f"{best_model_name} and preprocessor loaded successfully")
 
 
-# In[10]:
+
 
 
 # Load the dataset
@@ -177,8 +175,6 @@ print(f'Mean Squared Error (MSE): {mse}')
 print(f'Mean Absolute Error (MAE): {mae}')
 print(f'Predictions:\n{(y_sample, predictions)}')
 
-
-# In[11]:
 
 
 # Load the dataset
@@ -269,7 +265,6 @@ results_df = pd.DataFrame(results)
 print(results_df)
 
 
-# In[12]:
 
 
 best_model_info = results_df.loc[results_df['Accuracy'].idxmax()]
@@ -289,7 +284,6 @@ loaded_preprocessor = joblib.load('preprocessor.pkl')
 print(f"{best_model_name} and preprocessor loaded successfully")
 
 
-# In[13]:
 
 
 # Load the dataset
@@ -340,7 +334,7 @@ print(f'Mean Absolute Error (MAE): {mae}')
 print(f'Predictions:\n{(y_sample, predictions)}')
 
 
-# In[14]:
+
 
 
 # Load the dataset
@@ -431,7 +425,6 @@ results_df = pd.DataFrame(results)
 print(results_df)
 
 
-# In[15]:
 
 
 best_model_info = results_df.loc[results_df['Accuracy'].idxmax()]
@@ -450,8 +443,6 @@ loaded_model = joblib.load('best_model.pkl')
 loaded_preprocessor = joblib.load('preprocessor.pkl')
 print(f"{best_model_name} and preprocessor loaded successfully")
 
-
-# In[16]:
 
 
 # Load the dataset
@@ -502,13 +493,6 @@ print(f'Mean Absolute Error (MAE): {mae}')
 print(f'Predictions:\n{(y_sample, predictions)}')
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
